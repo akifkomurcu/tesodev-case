@@ -1,0 +1,410 @@
+.landing-page{
+    height: 1500px;
+    width: 1280px;
+    left: -339px;
+    top: -522px;
+    border-radius: 0px;
+    background-color: rgb(255, 255, 255);
+        
+}
+.btn{
+    position: absolute;
+    width: 197.16px;
+    height: 46px;
+    left: 1020px;
+    top: 64px;
+    background: #204080;
+    border-radius: 12px;
+    color: #FFFFFF;
+}
+.Add-btn{
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.tesodev-logo-landing-page{
+    position: absolute;
+    width: 278px;
+    height: 115px;
+    left: 501px;
+    top: 183px;
+}
+.Text-under-logo{
+    position: absolute;
+    width: 220px;
+    height: 20px;
+    left: 739.9px;
+    top: 309.71px;
+    
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    
+    color: #484848;
+}
+.Top-of-SearchInput{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 24px;
+    
+    position: absolute;
+    height: 54px;
+    left: 270px;
+    right: 270px;
+    top: 327.71px;
+    width: 740px;
+
+}
+
+.text{
+    position: static;
+    width: 692px;
+    height: 36px;
+    left: calc(50% - 692px/2);
+    top: calc(50% - 36px/2 + 3px);
+    
+    /* /Title2 */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    /* identical to box height, or 112% */
+    
+    
+    /* Ink/Darkest */
+    
+    color: #090A0A;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+.SearchInput{
+    
+/* Controls / Text Fields
+
+A text field is an input control that allows users to type text or number.
+*/
+
+position: absolute;
+height: 48px;
+width: 646px;
+left: 302.5px;
+right: 331.5px;
+top: 393.86px;
+
+border-radius: 8px;
+}
+
+.Input-Field{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    
+    /* Sky/White */
+    
+    background: #FFFFFF;
+    border: 2px solid #204080;
+    border-radius: 8px;
+}
+.Input-Landing-page{
+   /* Text */
+
+
+position: absolute;
+height: 16px;
+left: 48px;
+right: 16px;
+top: calc(50% - 16px/2);
+
+/* Regular/None/Regular */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+
+
+/* Ink/Darkest */
+
+color: #090A0A;
+}
+.search-icon{
+    /* Left Actionable */
+
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 12px;
+top: calc(50% - 24px/2);
+}
+.vector{
+    /* Vector */
+
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Ink/Darkest */
+
+border: 1.5px solid #090A0A;
+}
+
+.Search-button{
+        /* Search */
+
+        color: #FFFFFF;
+position: absolute;
+width: 57.58px;
+height: 28.59px;
+left: 999.9px;
+top: 406.86px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+
+    position: absolute;
+    width: 138px;
+    height: 46px;
+    left: 959.9px;
+    top: 393.86px;
+    
+    background: #204080;
+    border-radius: 12px;
+
+}
+.list-results{
+    position: absolute;
+width: 717.84px;
+height: 248.25px;
+left: 266.58px;
+top: 458.57px;
+
+background: #FFFFFF;
+border: 1px solid #484848;
+box-sizing: border-box;
+border-radius: 24px;
+}
+.result{
+    height: 63px;
+    width: 666px;
+    left: 277.0810546875px;
+    top: 474.6971435546875px;
+    border-radius: 0px;
+      
+}
+.topResult{
+    
+}
+.result-caption{
+    
+}
+
+
+.news-title{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 12px 24px;
+
+position: absolute;
+height: 54px;
+left: 84.08px;
+right: 455.92px;
+top: 788px;
+
+}
+.news-title-content{
+    position: static;
+width: 692px;
+height: 36px;
+left: calc(50% - 692px/2);
+top: calc(50% - 36px/2 + 3px);
+
+/* /Title2 */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 36px;
+/* identical to box height, or 112% */
+
+
+/* Ink/Darkest */
+
+color: #090A0A;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+}
+.slider{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    position: absolute;
+    width: 1161.35px;
+    height: 279px;
+    left: 55.16px;
+    top: 885px;
+
+}
+.news-big-image{
+  
+height: 195px;
+width: 327px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+
+}
+.news-big{
+    padding: 10px;
+    height: 279px;
+    width: 327px;
+    left: 127.0810546875px;
+    top: 885px;
+    border-radius: 0px;
+    
+
+}
+.img-All-text{
+    height: 72px;
+width: 327px;
+left: 0px;
+top: 207px;
+border-radius: 0px;
+
+}
+
+.img-text{
+    height: 48px;
+width: 327px;
+left: 0px;
+top: 0px;
+border-radius: nullpx;
+
+font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.img-text-caption{
+    height: 16px;
+width: 327px;
+left: 0px;
+top: 56px;
+border-radius: nullpx;
+
+font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.leftSliderIcon{
+    height: 48px;
+    width: 48px;
+    left: 55.16204833984375px;
+    top: 982.5px;
+    border-radius: 24px;
+
+
+}
+.rightSliderIcon{
+    height: 48px;
+    width: 48px;
+    left: 1216.5145874023438px;
+    top: 982.5px;
+    border-radius: 24px;
+    
+}
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: absolute;
+    width: 1280px;
+    height: 277.13px;
+    left: 0px;
+    top: 1222.87px;
+    background: rgba(41, 78, 152, 0.72);
+  
+}
+.Footer-image{
+    margin-left: 30px;
+    height: 179.4955596923828px;
+    width: 217.41900634765625px;
+    left: 59.66204833984375px;
+    top: 1271.6859130859375px;
+    border-radius: 0px;
+    
+}
+.adress{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 424.98px;
+    height: 171.77px;
+    left: 302.5px;
+    float: left;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #FFFFFF;
+
+}
+.map{
+    
+    height: 222.48878479003906px;
+    width: 467.48907470703125px;
+    left: 758.6744384765625px;
+    top: 1250.1893310546875px;
+    border-radius: 0px;
+    
+
+}

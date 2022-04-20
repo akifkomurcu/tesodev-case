@@ -1,0 +1,316 @@
+.signuppage{
+    position: relative;
+    width: 1280px;
+    height: 900px;
+ 
+}
+
+.searchNavImage{
+    position: absolute;
+    width: 149px;
+    height: 63px;
+    left: 37px;
+    top: 27px;
+
+}
+.Arrow{
+    position: absolute;
+    width: 26px;
+    height: 0px;
+    left: 251px;
+    top: 58px;
+    
+    border: 3px solid #484848;
+    box-sizing: border-box;
+    transform: rotate(-179.99deg);
+
+    border: 3px solid rgba(72, 72, 72, 1)
+    
+}
+.ReturnText{
+    position: absolute;
+    width: 220px;
+    height: 31px;
+    left: 263px;
+    top: 45px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #484848;
+    margin-left: 30px;
+}
+.NameLabel{
+    position: absolute;
+    width: 207px;
+    height: 26px;
+    left: 229px;
+    top: 155px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #686868;
+}
+.NameSurname{
+    position: absolute;
+    width: 590px;
+    height: 46px;
+    left: 225px;
+    top: 188px;
+    
+    background: #FFFFFF;
+    border: 1.5px solid #484848;
+    border-radius: 12px;
+}
+.InputNameSurname{
+    margin-left: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    width: 277px;
+    height: 26px;
+
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: rgba(100, 100, 100, 0.5);
+    
+}
+.CountryLabel{
+    position: absolute;
+    width: 207px;
+    height: 26px;
+    left: 229px;
+    top: 271px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #686868;
+    
+}
+.Country{
+    position: absolute;
+    width: 590px;
+    height: 46px;
+    left: 225px;
+    top: 304px;
+    
+    background: #FFFFFF;
+    border: 1.5px solid #484848;
+    border-radius: 12px;
+}
+.InputCountry{
+    position: absolute;
+    width: 400px;
+    height: 26px;
+
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: rgba(100, 100, 100, 0.5);
+}
+
+.CityLabel{
+    position: absolute;
+    width: 207px;
+    height: 26px;
+    left: 229px;
+    top: 387px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #686868;
+}
+.City{
+    position: absolute;
+    width: 590px;
+    height: 46px;
+    left: 225px;
+    top: 420px;
+    
+    background: #FFFFFF;
+    border: 1.5px solid #484848;
+    border-radius: 12px;
+}
+.InputCity{
+    position: absolute;
+    width: 400px;
+    height: 26px;
+
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: rgba(100, 100, 100, 0.5);
+    
+}
+.EmailLabel{
+    position: absolute;
+    width: 207px;
+    height: 26px;
+    left: 229px;
+    top: 503px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #686868;
+    
+}
+.Email{
+    position: absolute;
+    width: 590px;
+    height: 46px;
+    left: 225px;
+    top: 536px;
+    
+    background: #FFFFFF;
+    border: 1.5px solid #484848;
+    border-radius: 8px;
+}
+.InputEmail{
+    position: absolute;
+    width: 400px;
+    height: 26px;
+
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: rgba(100, 100, 100, 0.5);
+    
+}
+.AddBtn{
+    position: absolute;
+    width: 138px;
+    height: 46px;
+    left: 674px;
+    top: 652px;
+    
+    background: #4F75C2;
+    border-radius: 12px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.ErrorMessageDiv{
+    position: absolute;
+    width: 375px;
+    height: 123px;
+    left: 888px;
+    top: 753px;
+    
+    background: #C4C4C4;
+    border-radius: 8px;
+}
+.ErrorMessageTitle{
+    
+    position: absolute;
+    height: 36px;
+    left: 0px;
+    right: 0px;
+    top: calc(50% - 36px/2 - 16px);
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 36px;
+    /* identical to box height, or 257% */
+    
+    margin-left: 18px;
+
+    /* Ink/Darkest */
+    
+    color: #090A0A;
+    
+}
+.ErrorMessageContent{
+    position: absolute;
+    height: 48px;
+    left: 0px;
+    right: 0px;
+    top: calc(50% - 48px/2 + 34px);
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    /* or 185% */
+    
+    margin-left: 18px;
+    margin-top: 8px;
+    
+    /* Ink/Darkest */
+    
+    color: #090A0A;
+}
+.ErrorMessageExit{
+    height: 20px;
+    width: 20.000001907348633px;
+    left: 8.33%;
+    right: 8.33%;
+    top: 8.33%;
+    bottom: 8.33%;
+    border-radius: 0px;
+    
+    
+    /* Ink/Darkest */
+    
+    border: 1.5px solid #090A0A;
+}
+.ErrorMessageButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 8px 16px;
+    
+    position: absolute;
+    width: 70px;
+    height: 32px;
+    right: 24px;
+    top: calc(50% - 32px/2 + 0.5px);
+    
+    background: #FF4E78;
+    border-radius: 48px;
+}

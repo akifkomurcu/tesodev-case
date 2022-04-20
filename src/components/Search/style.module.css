@@ -1,0 +1,407 @@
+.Header{
+    
+display: flex;
+
+}
+
+.searchPage{
+height: 900px;
+width: 1280px;
+left: 1324px;
+top: -451px;
+border-radius: 0px;
+
+}
+.searchNavImage{
+    position: absolute;
+    width: 149px;
+    height: 63px;
+    left: 37px;
+    top: 27px;
+
+}
+.searchInput{
+    position: absolute;
+width: 509px;
+height: 46px;
+left: 221px;
+top: 35px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 8px;
+}
+.input{
+
+    height: 26px;
+    width: 143px;
+    left: 241px;
+    top: 48px;
+
+}
+.searchButton{
+
+    position: absolute;
+width: 138px;
+height: 46px;
+left: 754px;
+top: 32px;
+
+
+}
+.btn{
+    height: 46px;
+    width: 138px;
+    left: 754px;
+    top: 32px;
+    border-radius: 12px;
+    background: #4F75C2;
+    
+}
+.addNewRecord{
+    height: 46px;
+    width: 216px;
+    left: 995px;
+    top: 32px;
+    border-radius: 12px;
+
+}
+.addNewRecordBtn{
+    position: absolute;
+    width: 216px;
+    height: 46px;
+    left: 995px;
+    top: 32px;
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
+    
+    background: #204080;
+    border-radius: 12px;
+    color: #FFFFFF;
+}
+.orderBtn{
+    position: absolute;
+    width: 139.74px;
+    height: 29.5px;
+    left: 930px;
+    top: 127.23px;
+}
+.orderIcon{
+    position: absolute;
+    width: 26px;
+    height: 24px;
+    left: 938.74px;
+    top: 128.48px;
+}
+.order{
+    position: absolute;
+    width: 97px;
+    height: 25px;
+
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #484848;
+    
+}
+.orderOptions{
+    position: absolute;
+    width: 155.78px;
+    height: 135.11px;
+    left: 930px;
+    top: 172.04px;
+    
+    background: #FFFFFF;
+    border: 1px solid #8F8F8F;
+    box-sizing: border-box;
+    box-shadow: 4px 6px 12px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+}
+
+.ListResults{
+
+    background-color: #484848;
+    position: absolute;
+    height: 78.86px;
+    width: 726.1401977539062px;
+    left: 186px;
+    right: 367.86px;
+    top: 162.14px;
+    
+    background: #FFFFFF;
+    border-radius: 8px;
+    
+    
+}
+.ResultIcon{
+
+    background-color: #204080;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 24px;
+    top: calc(50% - 24px/2 - 0.43px);
+    
+
+}
+.ResultText{
+    display: flex;
+    justify-content: space-between;
+}
+.ResultTextMain{
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 151px;
+    height: 20px;
+    left: 0px;
+    top: calc(50% - 20px/2 - 10px);
+    
+
+}
+.ResultTextCaption{
+
+    width: 196px;
+    height: 16px;
+    left: 0px;
+    top: calc(50% - 16px/2 + 12px);
+    
+    /* Small/Tight/Regular */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+    
+    
+    /* Ink/Lighter */
+    
+    color: #72777A;
+
+}
+.ResultTextMainName{
+
+    margin-top: 20px;
+    margin-right: 15px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* or 125% */
+
+
+color: #484848;
+}
+.ListResultsLine{
+    position: absolute;
+width: 702.15px;
+height: 0px;
+left: 197.99px;
+top: 251.88px;
+
+background: #FFFFFF;
+border: 1px solid #7E7E7E;
+transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.orderNameAscending{
+    margin-left: 17px;
+    margin-top: 10.32px;
+    width: 164px;
+    height: 23.74px;
+    left: 947px;
+    top: 182.36px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #000000;
+
+}
+.orderNameDescending{
+    margin-top: 6px;
+    margin-left: 17px;
+    height: 23.743432998657227px;
+    width: 164px;
+    left: 947px;
+    top: 212.30223083496094px;
+    border-radius: nullpx;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #000000;    
+    
+}
+.orderYearAscending{
+    margin-top: 6px;
+    margin-left: 17px;
+    height: 23.743432998657227px;
+    width: 164px;
+    left: 947px;
+    top: 242.23959350585938px;
+    border-radius: nullpx;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #000000;
+
+}
+.orderYearDescending{
+    margin-top: 6px;
+    margin-left: 17px;
+    height: 22.08648109436035px;
+    width: 164px;
+    left: 947px;
+    top: 273.83392333984375px;
+    border-radius: nullpx;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #000000;
+    
+
+}
+.orderYearDescending:hover{
+    width: 138px;
+    height: 29.94px;
+    color: #ffffff;
+    background: #B3B3B3;
+    border-radius: 8px;
+}
+.previousBtn{
+    position: absolute;
+    width: 85.71px;
+    height: 25px;
+    left: 331.21px;
+    top: 718.35px;
+    
+    background: #FFFFFF;
+    border: 1px solid #484848;
+    border-radius: 4px;
+}
+.pageOne{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 427.21px;
+    top: 719.35px;
+    
+    background: #FFFFFF;
+    border: 1px solid #484848;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.pageTwo{
+
+    position: absolute;
+width: 24px;
+height: 24px;
+left: 462.21px;
+top: 719.35px;
+
+background: #FFFFFF;
+border: 1px solid #484848;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.pageThree{
+    position: absolute;
+width: 24px;
+height: 24px;
+left: 497.21px;
+top: 719.35px;
+
+background: #204080;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.multiPage{
+    position: absolute;
+width: 37px;
+height: 25px;
+left: 532.21px;
+top: 718.35px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+}
+.pageSeven{
+    position: absolute;
+width: 24px;
+height: 24px;
+left: 576.21px;
+top: 719.35px;
+
+background: #FFFFFF;
+border: 1px solid #484848;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.pageEight{
+    position: absolute;
+width: 24px;
+height: 24px;
+left: 611.21px;
+top: 719.35px;
+
+background: #FFFFFF;
+border: 1px solid #484848;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.pageNine{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 646.21px;
+    top: 719.35px;
+    
+    background: #FFFFFF;
+    border: 1px solid #484848;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.nextBtn{
+    position: absolute;
+    width: 85.71px;
+    height: 25px;
+    left: 681.21px;
+    top: 718.35px;
+    
+    background: #FFFFFF;
+    border: 1px solid #484848;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
