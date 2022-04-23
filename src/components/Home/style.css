@@ -1,13 +1,19 @@
 .landing-page{
-    height: 1500px;
+    position: relative;
     width: 1280px;
-    left: -339px;
-    top: -522px;
-    border-radius: 0px;
-    background-color: rgb(255, 255, 255);
+    height: 1500px;
+    margin: 0 auto;
+    background: #FFFFFF;
         
 }
 .btn{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
     position: absolute;
     width: 197.16px;
     height: 46px;
@@ -17,13 +23,17 @@
     border-radius: 12px;
     color: #FFFFFF;
 }
+.btn:hover{
+    cursor: pointer;
+    background: #4F75C2;
+}
 .Add-btn{
-    font-family: Roboto;
-font-size: 18px;
-font-weight: 700;
-line-height: 21px;
-letter-spacing: 0em;
-text-align: left;
+    font-family: inter,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }
 .tesodev-logo-landing-page{
@@ -40,9 +50,9 @@ text-align: left;
     left: 739.9px;
     top: 309.71px;
     
-    font-family: Roboto;
+    font-family: inter,sans-serif;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
@@ -55,7 +65,7 @@ text-align: left;
     flex-direction: column;
     align-items: flex-start;
     padding: 12px 24px;
-    
+  
     position: absolute;
     height: 54px;
     left: 270px;
@@ -74,13 +84,14 @@ text-align: left;
     
     /* /Title2 */
     
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
+    font-family: inter,sans-serif;
+
     font-size: 32px;
+    font-weight: 700;
     line-height: 36px;
-    /* identical to box height, or 112% */
-    
+
+    text-align: left;
+
     
     /* Ink/Darkest */
     
@@ -97,20 +108,15 @@ text-align: left;
 }
 
 .SearchInput{
-    
-/* Controls / Text Fields
 
-A text field is an input control that allows users to type text or number.
-*/
+    position: absolute;
+    height: 48px;
+    width: 646px;
+    left: 302.5px;
+    right: 331.5px;
+    top: 393.86px;
 
-position: absolute;
-height: 48px;
-width: 646px;
-left: 302.5px;
-right: 331.5px;
-top: 393.86px;
-
-border-radius: 8px;
+    border-radius: 8px;
 }
 
 .Input-Field{
@@ -126,70 +132,89 @@ border-radius: 8px;
     border: 2px solid #204080;
     border-radius: 8px;
 }
+.result-icon{
+    margin-left: 27px;
+    margin-top: 21px;
+    padding-right: 15px;
+    height: 27px;
+    width: 26px;
+    left: 3px;
+    top: 1px;
+    border-radius: 0px;
+
+    
+
+}
 .Input-Landing-page{
    /* Text */
+   margin-top: 9px;
+   margin-left: 48px;
+   height: 26px;
+   width: 582px;
 
+   
+   position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    
+    /* Sky/White */
 
-position: absolute;
-height: 16px;
-left: 48px;
-right: 16px;
-top: calc(50% - 16px/2);
-
-/* Regular/None/Regular */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-/* identical to box height, or 100% */
-
-
-/* Ink/Darkest */
-
-color: #090A0A;
+    background: #FFFFFF;
+    border: 0px solid #ffffff;
+    border-radius: 8px;
 }
 .search-icon{
     /* Left Actionable */
-
-
-position: absolute;
-width: 24px;
-height: 24px;
-left: 12px;
-top: calc(50% - 24px/2);
+    position: relative;
+    width: 24px;
+    height: 24px;
+    left: 12px;
+    top: calc(50% - 24px/2);
 }
 .vector{
     /* Vector */
 
 
-position: absolute;
-left: 12.5%;
-right: 12.5%;
-top: 12.5%;
-bottom: 12.5%;
+    position:relative;
+    left: 12.5%;
+    right: 12.5%;
+    top: 12.5%;
+    bottom: 12.5%;
 
-/* Ink/Darkest */
+    /* Ink/Darkest */
 
-border: 1.5px solid #090A0A;
+
+}
+.show-more-field{
+    position: absolute;
+    width: 327px;
+    height: 28.77px;
+    left: calc(50% - 327px/2 + 87.48px);
+    top: calc(50% - 28.77px/2 - 69.92px);
+    float: left;
+    margin-top: 180px;
+    margin-left: 40px
+
 }
 
 .Search-button{
         /* Search */
+    cursor: pointer;
+    color: #FFFFFF;
+    position: absolute;
+    width: 57.58px;
+    height: 28.59px;
+    left: 999.9px;
+    top: 406.86px;
 
-        color: #FFFFFF;
-position: absolute;
-width: 57.58px;
-height: 28.59px;
-left: 999.9px;
-top: 406.86px;
+    font-family: inter,sans-serif;
 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 21px;
+
+    letter-spacing: 0em;
+
+
 
     position: absolute;
     width: 138px;
@@ -200,77 +225,118 @@ line-height: 21px;
     background: #204080;
     border-radius: 12px;
 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+.Search-button:hover{
+    cursor: pointer;
+    background: #4F75C2;
 }
 .list-results{
     position: absolute;
-width: 717.84px;
-height: 248.25px;
-left: 266.58px;
-top: 458.57px;
-
-background: #FFFFFF;
-border: 1px solid #484848;
-box-sizing: border-box;
-border-radius: 24px;
+    width: 717.84px;
+    height: 248.25px;
+    left: 266.58px;
+    top: 458.57px;
+    
+    background: #FFFFFF;
+    border: 1px solid #484848;
+    box-sizing: border-box;
+    border-radius: 24px;
+    
 }
 .result{
+    border-bottom-style:solid 1px grey;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 7px;
     height: 63px;
     width: 666px;
     left: 277.0810546875px;
     top: 474.6971435546875px;
     border-radius: 0px;
+    background-color: #ffffff;
       
 }
 .topResult{
+    margin-top: 12px;
+    height: 20px;
+    width: 151px;
+    left: 0px;
+    top: 0px;
+
+
+
+    font-family: inter,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #090A0A;
+    
     
 }
 .result-caption{
-    
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: inter,sans-serif;
+    color: #72777A;
+
 }
 
 
 .news-title{
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 12px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 24px;
 
-position: absolute;
-height: 54px;
-left: 84.08px;
-right: 455.92px;
-top: 788px;
+    position: absolute;
+    height: 54px;
+    left: 84.08px;
+    right: 455.92px;
+    top: 788px;
 
 }
 .news-title-content{
     position: static;
-width: 692px;
-height: 36px;
-left: calc(50% - 692px/2);
-top: calc(50% - 36px/2 + 3px);
+    width: 692px;
+    height: 36px;
+    left: calc(50% - 692px/2);
+    top: calc(50% - 36px/2 + 3px);
 
 /* /Title2 */
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 36px;
+    font-family: inter,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
 /* identical to box height, or 112% */
 
 
 /* Ink/Darkest */
 
-color: #090A0A;
+    color: #090A0A;
 
 
 /* Inside auto layout */
 
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-margin: 8px 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
 }
 .slider{
     display: flex;
@@ -285,11 +351,11 @@ margin: 8px 0px;
 }
 .news-big-image{
   
-height: 195px;
-width: 327px;
-left: 0px;
-top: 0px;
-border-radius: 0px;
+    height: 195px;
+    width: 327px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
 
 }
 .news-big{
@@ -304,41 +370,41 @@ border-radius: 0px;
 }
 .img-All-text{
     height: 72px;
-width: 327px;
-left: 0px;
-top: 207px;
-border-radius: 0px;
+    width: 327px;
+    left: 0px;
+    top: 207px;
+    border-radius: 0px;
 
 }
 
 .img-text{
     height: 48px;
-width: 327px;
-left: 0px;
-top: 0px;
-border-radius: nullpx;
+    width: 327px;
+    left: 0px;
+    top: 0px;
 
-font-family: Inter;
-font-size: 16px;
-font-weight: 700;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
+
+    font-family: inter,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }
 .img-text-caption{
     height: 16px;
-width: 327px;
-left: 0px;
-top: 56px;
-border-radius: nullpx;
+    width: 327px;
+    left: 0px;
+    top: 56px;
+    border-radius: nullpx;
 
-font-family: Inter;
-font-size: 12px;
-font-weight: 400;
-line-height: 16px;
-letter-spacing: 0em;
-text-align: left;
+    font-family: inter,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }
 .leftSliderIcon{
@@ -347,7 +413,13 @@ text-align: left;
     left: 55.16204833984375px;
     top: 982.5px;
     border-radius: 24px;
+    
+    
+    background: #EEEEEE;
+    border-radius: 24px;
+    
 
+    
 
 }
 .rightSliderIcon{
@@ -356,6 +428,7 @@ text-align: left;
     left: 1216.5145874023438px;
     top: 982.5px;
     border-radius: 24px;
+    
     
 }
 .Footer{
@@ -380,26 +453,31 @@ text-align: left;
     border-radius: 0px;
     
 }
+.email{
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top:55px;
+
+}
 .adress{
-    display: flex;
-    align-items: center;
+    
+    margin-top: 66.67px;
     position: absolute;
     width: 424.98px;
     height: 171.77px;
     left: 302.5px;
     float: left;
     
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    
+    font-family: inter,sans-serif;
+
     color: #FFFFFF;
 
 }
 .map{
-    
+        
     height: 222.48878479003906px;
     width: 467.48907470703125px;
     left: 758.6744384765625px;

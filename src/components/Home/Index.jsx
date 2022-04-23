@@ -8,7 +8,7 @@ import Footer from './Footer'
 
 function Home() {
     return (
-        <section className='landing-page'>
+        <div className='landing-page'>
 
             <Header />
             <Form />
@@ -16,7 +16,7 @@ function Home() {
             <Footer />
 
 
-        </section>
+        </div>
     )
 }
 

@@ -1,40 +1,89 @@
-import React from 'react'
+import { useState } from "react";
+import mappinpng from './map-pin.png'
+import Vector from './Vector.png'
 import './style.css'
+import { Link } from "react-router-dom";
+import SearchHeader from '../Search/Header'
+import mockData from '../../mockData.json'
 function Form() {
+    const [filterText, setFilterText] = useState('')
+
+    const filtered = mockData.filter((item) => {
+        return Object.keys(item).some((key) =>
+            item[key].toString().toLowerCase().includes(filterText.toLowerCase())
+        )
+    })
+
+
+    const handleChange = (e) => {
+        setFilterText(e.target.value)
+
+    }
+    const handleSubmit = (e) => {
+
+
+    }
+
+
+
     return (
         <>
             <div className='SearchInput'>
                 <div className='Input-Field'>
                     <div className='search-icon'>
-                        <div className="vector"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M28 28L22.2 22.2M25.3333 14.6667C25.3333 20.5577 20.5577 25.3333 14.6667 25.3333C8.77563 25.3333 4 20.5577 4 14.6667C4 8.77563 8.77563 4 14.6667 4C20.5577 4 25.3333 8.77563 25.3333 14.6667Z" stroke="#090A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                        <div className="vector">
+                            <img src={Vector} alt="" />
                         </div>
                     </div>
-                    <input type="text" className='Input-Landing-page' />
+                    {/* Arama yapacağımız input */}
+                    <input
+                        value={filterText}
+                        name="inputSearch"
+                        className='Input-Landing-page'
+                        onChange={handleChange}
+                    />
                 </div>
 
 
             </div>
-            <button className='Search-button'>Search</button>
+            {/* Daha fazla kayıt görebileceğimiz search sayfasına yönlendiren buton */}
+            <Link to="/search">
+                <button
+                    className='Search-button'
+                    onClick={() => <SearchHeader filterText={filterText} />}
+                >Search</button>
+            </Link>
 
-            <div className="list-results">
-                <ul>
-                    <li className='result'>
-                        <div className="topResult">18th Avenue</div>
-                        <div className='result-caption'>Oakley Avenue, Hammond, IN</div>
-                    </li>
-                    <li className='result'>
-                        <div className="topResult">18th Avenue</div>
-                        <div className='result-caption'>Oakley Avenue, Hammond, IN</div>
-                    </li>
-                    <li className='result'>
-                        <div className="topResult">18th Avenue</div>
-                        <div className='result-caption'>Oakley Avenue, Hammond, IN</div>
-                    </li>
+            {/* liste sonuçları burada gösterilecek */}
+            {
+                filterText != "" && <div className="list-results">
+                    {
+                        filtered.map((e, i) => (
+                            i < 3 && <div className='result'>
+                                <div className="">
+                                    <img className="result-icon" src={mappinpng} alt="" />
+                                </div>
 
-                </ul>
-            </div>
+                                <div className="topResult">
+                                    {/* isim soyisim */}
+                                    {e.Name}
+
+                                    <div className='result-caption'>
+                                        {/* email */}
+                                        {e.Email}
+                                    </div>
+                                </div>
+
+                            </div>
+                        ))
+                    }
+                    {
+                        filtered.length >= 3 && <div className="show-more-field">
+                            Show more..
+                        </div>
+                    }
+                </div>
+            }
 
         </>
     )

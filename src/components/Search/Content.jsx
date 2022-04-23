@@ -1,42 +1,73 @@
-import React from 'react'
-import tesodevLogo from './tesodev-logo.png'
+
+import mappin from './map-pin.png'
+import sort from './sort.png'
 import style from './style.module.css'
+import mockData from '../../mockData.json'
 function Content() {
+
+
+
     return (
-        <div>
+        <>
+            {/* order button */}
+
             <div className={style.orderBtn}>
-                <div className={style.orderIcon}></div>
-                <button className={style.order}>Order By</button>
+                <div className={style.order}>
+                    <div className={style.orderIcon}>
+                        <img src={sort} alt="" />
+                    </div>
+                </div>
+                <div className={style.orderBtnText}>Order By</div>
             </div>
+            {/* order select*/}
             <div className={style.orderOptions}>
                 <div className={style.orderNameAscending}>Name ascending</div>
                 <div className={style.orderNameDescending}>Name descending</div>
                 <div className={style.orderYearAscending}>Year ascending</div>
-                <div className={style.orderYearDescending}>Name descending</div>
-            </div>
-            <div className={style.ListResults}>
-                <div className={style.ResultIcon}></div>
-                <div className={style.ResultText}>
-                    <div className={style.ResultTextMain}>
-                        18th Street Brewery
-                        <div className={style.ResultTextCaption}>
-                            Oakley Avenue, Hammond, IN
-                        </div>
-                    </div>
-
-                    <div className={style.ResultTextMainName}>
-                        Jane Doe
-                        <div className={style.ResultTextMainDate}>
-                            01/20/2021
-                        </div>
-                    </div>
-
-                </div>
+                <div className={style.orderYearDescending}>Year descending</div>
             </div>
 
-            <hr className={style.ListResultsLine} />
+            {/* list */}
+            <div className={style.List}>
 
-        </div>
+                {
+                    mockData.map((element, index) => (
+
+                        index < 5 && <div className={style.ListResults}>
+                            <div className={style.ResultText}>
+                                <img className={style.ResultIcon} src={mappin} alt="" />
+                                <div className={style.ResultTextMain}>
+                                    {/* company olsun */}
+                                    {element.Company}
+                                    <div className={style.ResultTextCaption}>
+                                        {/* email olsun */}
+                                        {element.Email}
+                                    </div>
+                                </div>
+
+                                <div className={style.ResultTextMainName}>
+                                    {/* isim olsun */}
+                                    {element.Name}
+                                    <div className={style.ResultTextMainDate}>
+                                        {/* tarih olsun */}
+                                        {element.Date}
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr className={style.ListResultsLine} />
+                        </div>
+                    ))
+                }
+
+
+
+
+            </div>
+
+
+
+        </>
     )
 }
 

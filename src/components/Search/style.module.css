@@ -1,16 +1,15 @@
+
+.searchPage{
+    position: relative;
+    width: 1280px;
+    height: 900px;
+    
+    background: #FCFCFC;
+    margin:  0 auto;
+}
 .Header{
     
 display: flex;
-
-}
-
-.searchPage{
-height: 900px;
-width: 1280px;
-left: 1324px;
-top: -451px;
-border-radius: 0px;
-
 }
 .searchNavImage{
     position: absolute;
@@ -33,12 +32,19 @@ box-sizing: border-box;
 border-radius: 8px;
 }
 .input{
-
-    height: 26px;
-    width: 143px;
-    left: 241px;
-    top: 48px;
-
+    width: 509px;
+    height: 46px;
+    left: 221px;
+    top: 35px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: inter,sans-serif;
+    background: #FFFFFF;
+    color: #484848;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 .searchButton{
 
@@ -51,13 +57,26 @@ top: 32px;
 
 }
 .btn{
+    font-family: inter,sans-serif;
     height: 46px;
     width: 138px;
     left: 754px;
     top: 32px;
     border-radius: 12px;
-    background: #4F75C2;
+    color: #FFFFFF;
+    background: #204080;
+    cursor: pointer;
+
+    font-family: inter,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
     
+}
+.btn:hover{
+    background:#4F75C2;
 }
 .addNewRecord{
     height: 46px;
@@ -73,46 +92,57 @@ top: 32px;
     height: 46px;
     left: 995px;
     top: 32px;
-    font-family: Roboto;
-font-size: 18px;
-font-weight: 700;
-line-height: 21px;
-letter-spacing: 0em;
-text-align: left;
-
+    font-family: inter,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
     
     background: #204080;
     border-radius: 12px;
     color: #FFFFFF;
 }
+.addNewRecordBtn:hover{
+    cursor: pointer;
+    background: #4F75C2;
+}
 .orderBtn{
     position: absolute;
+    display: flex;
     width: 139.74px;
     height: 29.5px;
     left: 930px;
     top: 127.23px;
+    
 }
 .orderIcon{
-    position: absolute;
-    width: 26px;
+    
     height: 24px;
-    left: 938.74px;
-    top: 128.48px;
+    width: 26px;
+    left: 938.73681640625px;
+    top: 128.47750854492188px;
+    border-radius: 0px;
+    
+}
+.orderBtnText{
+    height: 25px;
+    width: 97px;
+    left: 972.73681640625px;
+    top: 130.47750854492188px;
+    margin-right: 200px;    
+
 }
 .order{
-    position: absolute;
-    width: 97px;
-    height: 25px;
+    height: 29.49591064453125px;
+    width: 126.27880859375px;
+    left: 930px;
+    top: 127.22955322265625px;
+    border-radius: 8px;
+    
 
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    
-    color: #484848;
-    
+
 }
 .orderOptions{
     position: absolute;
@@ -132,22 +162,36 @@ text-align: left;
 .ListResults{
 
     background-color: #484848;
-    position: absolute;
     height: 78.86px;
     width: 726.1401977539062px;
     left: 186px;
     right: 367.86px;
     top: 162.14px;
-    
     background: #FFFFFF;
     border-radius: 8px;
+    cursor: pointer;
     
+}
+.ListResults:hover{
+    cursor: pointer;
+    background: rgba(79, 117, 194, 0.21);
+    border-radius: 8px;
+}
+.List{
+    position: absolute;
+    width: 726.14px;
+    height: 505.99px;
+    left: 186px;
+    top: 162.14px;
+    
+ 
     
 }
 .ResultIcon{
+    
 
-    background-color: #204080;
-    position: absolute;
+    margin-left: 24px;
+    margin-top: 27px;
     width: 24px;
     height: 24px;
     left: 24px;
@@ -158,14 +202,17 @@ text-align: left;
 .ResultText{
     display: flex;
     justify-content: space-between;
+    
 }
 .ResultTextMain{
-    margin-left: 60px;
-    margin-top: 20px;
-    width: 151px;
-    height: 20px;
-    left: 0px;
-    top: calc(50% - 20px/2 - 10px);
+    margin-top: 19px;
+    margin-left: 5px;
+    height: 40px;
+    width: 600px;
+    left: 60px;
+    top: 19px;
+    border-radius: 0px;
+    
     
 
 }
@@ -176,17 +223,14 @@ text-align: left;
     left: 0px;
     top: calc(50% - 16px/2 + 12px);
     
-    /* Small/Tight/Regular */
+
     
-    font-family: 'Inter';
+    font-family: inter,sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    /* identical to box height, or 114% */
-    
-    
-    /* Ink/Lighter */
+
     
     color: #72777A;
 
@@ -194,19 +238,20 @@ text-align: left;
 .ResultTextMainName{
 
     margin-top: 20px;
-    margin-right: 15px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-/* or 125% */
+    width: 20%;
+    height: 50px;
+    font-family: inter,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px; 
+    text-align: left;
 
 
-color: #484848;
+ color: #484848;
 }
 .ListResultsLine{
-    position: absolute;
+
 width: 702.15px;
 height: 0px;
 left: 197.99px;
@@ -224,7 +269,7 @@ transform: matrix(1, 0, 0, 1, 0, 0);
     left: 947px;
     top: 182.36px;
     
-    font-family: 'Roboto';
+    font-family: inter,sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -241,7 +286,7 @@ transform: matrix(1, 0, 0, 1, 0, 0);
     left: 947px;
     top: 212.30223083496094px;
     border-radius: nullpx;
-    font-family: 'Roboto';
+    font-family: inter,sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -259,7 +304,7 @@ transform: matrix(1, 0, 0, 1, 0, 0);
     top: 242.23959350585938px;
     border-radius: nullpx;
 
-    font-family: 'Roboto';
+    font-family: inter,sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -277,7 +322,7 @@ transform: matrix(1, 0, 0, 1, 0, 0);
     top: 273.83392333984375px;
     border-radius: nullpx;
 
-    font-family: 'Roboto';
+    font-family: inter,sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -288,8 +333,9 @@ transform: matrix(1, 0, 0, 1, 0, 0);
 
 }
 .orderYearDescending:hover{
-    width: 138px;
+    width: 128px;
     height: 29.94px;
+    margin-bottom: 20px;
     color: #ffffff;
     background: #B3B3B3;
     border-radius: 8px;
@@ -349,7 +395,7 @@ height: 25px;
 left: 532.21px;
 top: 718.35px;
 
-font-family: 'Roboto';
+font-family: inter,sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 24px;
