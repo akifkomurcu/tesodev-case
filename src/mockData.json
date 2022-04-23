@@ -1,7 +1,5 @@
 [
 
-
-			
 			{
 				"Name":"Hyacinth Vincent",
 				"Company":"Duis Corporation",
@@ -93,6 +91,13 @@
 				"Date":"30/07/2021",
 				"Country":"Estonia",
 				"City":"Estevan"
+			},{
+				"Name":"akif komurcu",
+				"Company":"tesodev",
+				"Email":"akif@akif.com",
+				"Date":"30/07/2021",
+				"Country":"Turkey",
+				"City":"Sivas"
 			}
 			
 		

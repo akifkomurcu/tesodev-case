@@ -1,39 +1,34 @@
-
-import mappin from './map-pin.png'
-import sort from './sort.png'
+import { useState } from 'react'
 import style from './style.module.css'
-import mockData from '../../mockData.json'
-function Content() {
+import { useSelector, useDispatch } from 'react-redux'
+import mappin from './map-pin.png'
+import Footer from './Footer'
+
+
+function List({ clicked }) {
+    const filteredResults = useSelector(state => state.search.filteredResults)
 
 
 
+    //bulunulan sayfa bilgisi
+    const [currentPage, setCurrentPage] = useState(1)
+    //sayfada bulunacak sonuç sayısı
+    const [resultsPerPage] = useState(5)
+
+    const indexOfLastResult = currentPage * resultsPerPage;
+    const indexOfFirstResult = indexOfLastResult - resultsPerPage;
+    const currentResults = filteredResults.slice(indexOfFirstResult, indexOfLastResult);
+
+    const paginate = (pageNumber) => setCurrentPage(pageNumber)
+    // index < 6 && clicked == true && 
     return (
         <>
-            {/* order button */}
-
-            <div className={style.orderBtn}>
-                <div className={style.order}>
-                    <div className={style.orderIcon}>
-                        <img src={sort} alt="" />
-                    </div>
-                </div>
-                <div className={style.orderBtnText}>Order By</div>
-            </div>
-            {/* order select*/}
-            <div className={style.orderOptions}>
-                <div className={style.orderNameAscending}>Name ascending</div>
-                <div className={style.orderNameDescending}>Name descending</div>
-                <div className={style.orderYearAscending}>Year ascending</div>
-                <div className={style.orderYearDescending}>Year descending</div>
-            </div>
-
-            {/* list */}
             <div className={style.List}>
 
                 {
-                    mockData.map((element, index) => (
+                    currentResults.length != 0 && currentResults.map((element, index) => (
 
-                        index < 5 && <div className={style.ListResults}>
+                        <div key={index} className={style.ListResults}>
                             <div className={style.ResultText}>
                                 <img className={style.ResultIcon} src={mappin} alt="" />
                                 <div className={style.ResultTextMain}>
@@ -64,11 +59,10 @@ function Content() {
 
 
             </div>
-
-
-
+            <Footer resultsPerPage={resultsPerPage} totalResults={filteredResults.length} paginate={paginate} />
         </>
     )
+
 }
 
-export default Content
+export default List

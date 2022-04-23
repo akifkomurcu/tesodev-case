@@ -93,6 +93,9 @@
 
 color: rgba(100, 100, 100, 0.5);
 }
+.InputNameSurname:focus{
+    outline: none;
+}
 .CountryLabel{
     position: absolute;
     width: 207px;
@@ -136,7 +139,9 @@ color: rgba(100, 100, 100, 0.5);
     
     color: rgba(100, 100, 100, 0.5);
 }
-
+.InputCountry:focus{
+    outline: none;
+}
 .CityLabel{
     position: absolute;
     width: 207px;
@@ -179,6 +184,9 @@ color: rgba(100, 100, 100, 0.5);
     
     color: rgba(100, 100, 100, 0.5);
     
+}
+.InputCity:focus{
+    outline: none;
 }
 .EmailLabel{
     position: absolute;
@@ -223,6 +231,9 @@ color: rgba(100, 100, 100, 0.5);
     
     color: rgba(100, 100, 100, 0.5);
     
+}
+.InputEmail:focus{
+    outline: none;
 }
 .AddBtn{
     position: absolute;

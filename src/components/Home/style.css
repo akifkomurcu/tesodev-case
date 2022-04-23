@@ -165,6 +165,9 @@
     border: 0px solid #ffffff;
     border-radius: 8px;
 }
+.Input-Landing-page:focus {
+    outline: none;
+}
 .search-icon{
     /* Left Actionable */
     position: relative;
@@ -188,6 +191,7 @@
 
 }
 .show-more-field{
+    cursor: pointer;
     position: absolute;
     width: 327px;
     height: 28.77px;
@@ -195,7 +199,12 @@
     top: calc(50% - 28.77px/2 - 69.92px);
     float: left;
     margin-top: 180px;
-    margin-left: 40px
+    margin-left: 40px;
+    color: black;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
 
 }
 
