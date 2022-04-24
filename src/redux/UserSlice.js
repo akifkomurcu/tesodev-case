@@ -9,6 +9,7 @@ export const UserSlice = createSlice({
         isLoading: false,
         error: null,
         filteredResults: [],
+        sortType: "",
     },
     reducers: {
         setText: (state, action) => {
@@ -22,9 +23,13 @@ export const UserSlice = createSlice({
         },
         setFilteredResults: (state, action) => {
             state.filteredResults = action.payload;
-            console.log("filteredResults",state.filteredResults);
-        }
+          
+        },
+        setSortType: (state, action) => {
+            state.sortType = action.payload;
+            console.log(state.sortType);
+        },
     }
 });
-export const { setText, setLoading, setError,setFilteredResults } = UserSlice.actions;
+export const { setText, setLoading, setError,setFilteredResults,setSortType } = UserSlice.actions;
 export default UserSlice.reducer;

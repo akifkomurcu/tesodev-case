@@ -115,8 +115,8 @@
     background: #4F75C2;
 }
 .orderBtn{
-    position: absolute;
     display: flex;
+    position: absolute;
     width: 139.74px;
     height: 29.5px;
     left: 930px;
@@ -124,20 +124,27 @@
     
 }
 .orderIcon{
-    
+    float: left;
     height: 24px;
     width: 26px;
     left: 938.73681640625px;
     top: 128.47750854492188px;
     border-radius: 0px;
     
+    
 }
 .orderBtnText{
+
     height: 25px;
     width: 97px;
     left: 972.73681640625px;
     top: 130.47750854492188px;
-    margin-right: 200px;    
+    font-family: inter,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 3px;
 
 }
 .order{
@@ -146,7 +153,7 @@
     left: 930px;
     top: 127.22955322265625px;
     border-radius: 8px;
-    
+    cursor: pointer;
 
 
 }
@@ -277,7 +284,7 @@
     height: 23.74px;
     left: 947px;
     top: 182.36px;
-    
+    text-decoration: none underline;
     font-family: inter,sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -286,6 +293,16 @@
     
     color: #000000;
 
+}
+.orderNameAscending:hover{
+
+    width: 118px;
+    height: 24px;
+    text-align: center;
+    background: #B3B3B3;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
 }
 .orderNameDescending{
     margin-top: 6px;
@@ -304,6 +321,15 @@
     color: #000000;    
     
 }
+.orderNameDescending:hover{
+    width: 118px;
+    height: 24px;
+    text-align: center;
+    background: #B3B3B3;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
 .orderYearAscending{
     margin-top: 6px;
     margin-left: 17px;
@@ -321,6 +347,15 @@
     
     color: #000000;
 
+}
+.orderYearAscending:hover{
+    width: 118px;
+    height: 24px;
+    text-align: center;
+    background: #B3B3B3;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
 }
 .orderYearDescending{
     margin-top: 6px;
@@ -342,12 +377,13 @@
 
 }
 .orderYearDescending:hover{
-    width: 128px;
-    height: 29.94px;
-    margin-bottom: 20px;
-    color: #ffffff;
+    width: 118px;
+    height: 24px;
+    text-align: center;
     background: #B3B3B3;
     border-radius: 8px;
+    color: white;
+    cursor: pointer;
 }
 .previousBtn{
     height: 25px;
@@ -369,7 +405,7 @@
     left: 427.21px;
     top: 718.35px;
 }
-.pageOne{
+.pageButton{
 
     margin: 0px 4px 0px 4px;
     height: 24px;
@@ -377,7 +413,16 @@
     left: 427.212890625px;
     top: 719.3464965820312px;
     border-radius: 4px;
-    
+    background: #FFFFFF;
+    border: 1px solid #484848;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.pageButton:focus{
+    background: #204080;
+    border: 1px solid #484848;
+
 }
 .pageTwo{
 

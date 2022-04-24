@@ -7,6 +7,8 @@ import Footer from './Footer'
 
 function List({ clicked }) {
     const filteredResults = useSelector(state => state.search.filteredResults)
+    const sortType = useSelector(state => state.search.sortType)
+
 
 
 
@@ -15,9 +17,43 @@ function List({ clicked }) {
     //sayfada bulunacak sonuç sayısı
     const [resultsPerPage] = useState(5)
 
+    //sayfa başına çıkan sonuç sayısı ile bulunulan sayfanın çarpımından elde ettiğim son sonuç indexi
     const indexOfLastResult = currentPage * resultsPerPage;
+    //son sayfa sayısı ile sayfa başına çıkan sonuç sayısının farkından elde ettiğim ilk sonuç indexi
     const indexOfFirstResult = indexOfLastResult - resultsPerPage;
+
     const currentResults = filteredResults.slice(indexOfFirstResult, indexOfLastResult);
+
+    //isme göre sırala artan
+    if (sortType && sortType === "NameAsc") {
+        currentResults.sort((a, b) => {
+            return a.Name.localeCompare(b.Name)
+        })
+        console.log(currentResults)
+    }
+
+    //isme göre sırala azalan
+    if (sortType && sortType === "NameDesc") {
+        currentResults.sort((a, b) => {
+            return a.Name.localeCompare(b.Name)
+        })
+        console.log(currentResults)
+    }
+    // tarihe göre sırala artan
+    if (sortType && sortType === "YearAsc") {
+        currentResults.sort((a, b) => {
+            return parseInt(a.Date.YY) - parseInt(b.Date.YY);
+        })
+        console.log(currentResults)
+    }
+
+    // tarihe göre sırala azalan
+    if (sortType && sortType === "YearDesc") {
+        currentResults.sort((a, b) => {
+            return parseInt(b.Date.YY) - parseInt(a.Date.YY);
+        })
+        console.log(currentResults)
+    }
 
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
     // index < 6 && clicked == true && 
@@ -45,7 +81,7 @@ function List({ clicked }) {
                                     {element.Name}
                                     <div className={style.ResultTextMainDate}>
                                         {/* tarih olsun */}
-                                        {element.Date}
+                                        {`${element.Date.DD}/${element.Date.MM}/${element.Date.YY}`}
                                     </div>
                                 </div>
 

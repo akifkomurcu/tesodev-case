@@ -4,7 +4,7 @@ import tesodevLogo from './tesodev-logo.png'
 import sort from './sort.png'
 import style from './style.module.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { setFilteredResults } from '../../redux/UserSlice'
+import { setFilteredResults, setSortType } from '../../redux/UserSlice'
 import mockData from '../../mockData.json'
 import List from "./List";
 function Header() {
@@ -15,6 +15,7 @@ function Header() {
 
     //butona basıldığında sonuçların listelenmesi için tutulmuş durum
     const [clicked, setClicked] = useState(false)
+    const [orderClicked, setOrderClicked] = useState(false)
 
     //search sayfasında arama yapabilmek için inputtan veri alan state. İnputun verisi filterinput'a düşer.
     const [filterinput, setFilterInput] = useState(filteredText)
@@ -32,11 +33,6 @@ function Header() {
         setClicked(true)
 
     }
-
-
-
-
-
 
     return (
         <>
@@ -62,20 +58,23 @@ function Header() {
             {/* order button */}
 
             <div className={style.orderBtn}>
-                <div className={style.order}>
-                    <div className={style.orderIcon}>
+                <button className={style.order} onClick={() => setOrderClicked(!orderClicked)}>
+                    <span className={style.orderIcon}>
                         <img src={sort} alt="" />
-                    </div>
-                </div>
-                <div className={style.orderBtnText}>Order By</div>
+                    </span>
+                    <span className={style.orderBtnText}>Order By</span>
+                </button>
+
             </div>
             {/* order select*/}
-            <div className={style.orderOptions}>
-                <div className={style.orderNameAscending}>Name ascending</div>
-                <div className={style.orderNameDescending}>Name descending</div>
-                <div className={style.orderYearAscending}>Year ascending</div>
-                <div className={style.orderYearDescending}>Year descending</div>
-            </div>
+            {
+                orderClicked == true && <div className={style.orderOptions}>
+                    <div className={style.orderNameAscending} onClick={() => dispatch(setSortType("NameAsc"))}>Name ascending</div>
+                    <div className={style.orderNameDescending} onClick={() => dispatch(setSortType("NameDesc"))}>Name descending</div>
+                    <div className={style.orderYearAscending} onClick={() => dispatch(setSortType("YearAsc"))}>Year ascending</div>
+                    <div className={style.orderYearDescending} onClick={() => dispatch(setSortType("YearDesc"))}>Year descending</div>
+                </div>
+            }
 
             <List clicked={clicked} />
 

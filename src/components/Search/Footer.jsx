@@ -1,18 +1,16 @@
 import React from 'react'
 import style from './style.module.css'
 function Footer({ resultsPerPage, totalResults, paginate }) {
-    console.log("totalResults", totalResults)
-    console.log("resultsPerPage", resultsPerPage)
+
 
     const pageNumbers = [];
     for (let i = 1; i <= Math.ceil(totalResults / resultsPerPage); i++) {
         pageNumbers.push(i);
-        console.log("pageNumbers", pageNumbers)
+
     }
 
     return (
         <div className={style.Footer}>
-
             <div className={style.pageButtons}>
                 <button className={style.previousBtn} onClick={() => paginate()}>Previous</button>
                 {
@@ -20,7 +18,7 @@ function Footer({ resultsPerPage, totalResults, paginate }) {
 
                         <div key={number}>
 
-                            <button onClick={() => paginate(number)} className={style.pageOne}>   {number}</button>
+                            <button onClick={() => paginate(number)} className={style.pageButton}>   {number}</button>
 
 
                         </div>
