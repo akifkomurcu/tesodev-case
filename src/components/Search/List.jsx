@@ -35,7 +35,7 @@ function List({ clicked }) {
     //isme göre sırala azalan
     if (sortType && sortType === "NameDesc") {
         currentResults.sort((a, b) => {
-            return a.Name.localeCompare(b.Name)
+            return b.Name.localeCompare(a.Name)
         })
         console.log(currentResults)
     }
