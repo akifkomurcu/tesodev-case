@@ -48,16 +48,3 @@ export default Footer
 
 
 
-
-{/* <ul >
-{pageNumbers.map(number => (
-    <li key={number}>
-        <a onClick={() => paginate(number)} href="#">
-            {number}
-        </a>
-    </li>
-))}
-{/* <button className={style.previousBtn}>Previous</button>
-<button className={style.pageOne}>1</button> 
-
-<button className={style.nextBtn}>Next</button>  */}
