@@ -6,8 +6,6 @@ export const UserSlice = createSlice({
     name: "search",
     initialState: {
         searchText: "",
-        isLoading: false,
-        error: null,
         filteredResults: [],
         sortType: "",
         page:1

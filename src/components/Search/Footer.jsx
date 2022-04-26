@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux'
 import style from './style.module.css'
+
 function Footer({ resultsPerPage, totalResults, paginate }) {
 
     const pageNum = useSelector(state => state.search.page)
@@ -8,6 +9,9 @@ function Footer({ resultsPerPage, totalResults, paginate }) {
         pageNumbers.push(i);
 
     }
+    const filtertext = useSelector(state => state.search.filteredResults)
+    console.log("filtertext", filtertext)
+
     const multipaging = [];
 
     if (pageNumbers.length > 6) {
@@ -22,7 +26,7 @@ function Footer({ resultsPerPage, totalResults, paginate }) {
             <div className={style.pageButtons}>
 
                 {
-                    pageNum && <button className={pageNum > 1 ? style.previousBtn : style.previousBtnNone} onClick={() => paginate(pageNum - 1)}>Previous</button>
+                    filtertext != "" && pageNum && <button className={pageNum > 1 ? style.previousBtn : style.previousBtnNone} onClick={() => paginate(pageNum - 1)}>Previous</button>
                 }
 
                 {/* sayfa sayısı 8 den çok değilse çalışır */}
@@ -59,7 +63,7 @@ function Footer({ resultsPerPage, totalResults, paginate }) {
 
 
                 {
-                    pageNum && <button className={pageNum != pageNumbers.length ? style.nextBtn : style.nextBtnNone} onClick={() => paginate(pageNum + 1)} >Next</button>
+                    filtertext != "" && pageNum && <button className={pageNum != pageNumbers.length ? style.nextBtn : style.nextBtnNone} onClick={() => paginate(pageNum + 1)} >Next</button>
                 }
 
             </div>
