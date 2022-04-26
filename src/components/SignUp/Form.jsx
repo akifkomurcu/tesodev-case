@@ -22,9 +22,9 @@ function Form() {
     const onSubmit = (e) => {
         e.preventDefault();
 
-        if (form.NameSurname.length < 3 || form.NameSurname.includes(1, 2, 3, 4, 5, 6, 7, 8, 9, 0) === true || form.NameSurname.length > 60) {
-            setNameError("NameSurname");
+        if (form.NameSurname.length < 3 || form.NameSurname.includes(1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9 || 0) === true || form.NameSurname.length > 60) {
             setCheckError(true)
+            setNameError("NameSurname");
             console.log(NameError);
             return false
 
@@ -33,9 +33,9 @@ function Form() {
             setNameError("")
         }
 
-        if (form.Country.length < 2 || form.Country.includes(1, 2, 3, 4, 5, 6, 7, 8, 9, 0) === true || form.Country.length > 40) {
-            setCountryError("Country");
+        if (form.Country.length < 3 || form.Country.includes(1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9 || 0) === true || form.Country.length > 40) {
             setCheckError(true)
+            setCountryError("Country");
             console.log(CountryError);
             return false
 
@@ -44,9 +44,9 @@ function Form() {
             setCountryError("")
         }
 
-        if (form.City.length < 2 || form.City.includes(1, 2, 3, 4, 5, 6, 7, 8, 9, 0) === true || form.City.length > 40) {
-            setCityError("City");
+        if (form.City.length < 3 || form.City.includes(1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9 || 0) === true || form.City.length > 40) {
             setCheckError(true)
+            setCityError("City");
             console.log(CityError);
             return false
 
@@ -56,9 +56,8 @@ function Form() {
         }
 
         if (form.Email.includes("@") === false || form.Email.length < 5) {
-            setEmailerror("Email");
             setCheckError(true)
-
+            setEmailerror("Email");
             console.log(Emailerror);
             return false
         }
@@ -129,7 +128,7 @@ function Form() {
                     <div className={style.ErrorMessageButton}>Error</div>
                     <div className={style.ErrorMessageTitle}>Error while adding link element</div>
                     <div className={style.ErrorMessageContent}>
-                        {NameError && "Name Surname (only letters, min 4 – max 60 character)" || CountryError && "Country (only letters, min 2 – max 40 character)" || CityError && "City (only letters, min 2 – max 40 character)" || Emailerror && "Email is not valid"}
+                        {NameError && "Name Surname (only letters, min 4-max 60 character)" || CountryError && "Country (only letters, min 2-max 40 character)" || CityError && "City (only letters, min 2-max 40 character)" || Emailerror && "Email is not valid    (min 5 characters)"}
                     </div>
                 </div>
             }

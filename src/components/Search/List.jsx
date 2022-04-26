@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import style from './style.module.css'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import mappin from './map-pin.png'
 import Footer from './Footer'
-
+import { setPage } from '../../redux/UserSlice'
 
 function List() {
     const filteredResults = useSelector(state => state.search.filteredResults)
@@ -18,8 +18,11 @@ function List() {
 
     const currentResults = filteredResults.slice(indexOfFirstResult, indexOfLastResult);
 
-    const paginate = (pageNumber) => setCurrentPage(pageNumber)
-    // index < 6 && clicked == true && 
+    const dispatch = useDispatch()
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber)
+        dispatch(setPage(pageNumber))
+    }
     return (
         <>
             <div className={style.List}>
