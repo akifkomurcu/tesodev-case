@@ -10,7 +10,7 @@ function Footer({ resultsPerPage, totalResults, paginate }) {
 
     }
     const filtertext = useSelector(state => state.search.filteredResults)
-    console.log("filtertext", filtertext)
+
 
     const multipaging = [];
 
@@ -20,7 +20,7 @@ function Footer({ resultsPerPage, totalResults, paginate }) {
         const pageNumbers2 = pageNumbers.slice(tut, pageNumbers.length);
         multipaging.push(...pageNumbers3, ...pageNumbers2);
     }
-    console.log("multipaging", multipaging)
+
     return (
         <div className={style.Footer}>
             <div className={style.pageButtons}>

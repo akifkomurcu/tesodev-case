@@ -54,7 +54,6 @@ export const UserSlice = createSlice({
         },
         setPage: (state, action) => {
             state.page = action.payload;
-            console.log(state.page)
         }
         
     }

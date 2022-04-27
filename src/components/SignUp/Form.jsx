@@ -25,7 +25,7 @@ function Form() {
         if (form.NameSurname.length < 3 || form.NameSurname.includes(1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9 || 0) === true || form.NameSurname.length > 60) {
             setCheckError(true)
             setNameError("NameSurname");
-            console.log(NameError);
+
             return false
 
         }
@@ -36,7 +36,7 @@ function Form() {
         if (form.Country.length < 3 || form.Country.includes(1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9 || 0) === true || form.Country.length > 40) {
             setCheckError(true)
             setCountryError("Country");
-            console.log(CountryError);
+
             return false
 
         }
@@ -47,7 +47,7 @@ function Form() {
         if (form.City.length < 3 || form.City.includes(1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9 || 0) === true || form.City.length > 40) {
             setCheckError(true)
             setCityError("City");
-            console.log(CityError);
+
             return false
 
         }
@@ -58,7 +58,7 @@ function Form() {
         if (form.Email.includes("@") === false || form.Email.length < 5) {
             setCheckError(true)
             setEmailerror("Email");
-            console.log(Emailerror);
+
             return false
         }
         else {
@@ -68,7 +68,7 @@ function Form() {
 
         setForm(initialFormValues);
         setAddBtnFullfilled(false)
-        console.log(form)
+
 
     }
 
