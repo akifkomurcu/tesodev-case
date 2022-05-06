@@ -29,7 +29,7 @@ function Footer({ resultsPerPage, totalResults, paginate }) {
                     filtertext != "" && pageNum && <button className={pageNum > 1 ? style.previousBtn : style.previousBtnNone} onClick={() => paginate(pageNum - 1)}>Previous</button>
                 }
 
-                {/* sayfa sayısı 8 den çok değilse çalışır */}
+                {/* sayfa sayısı 6 den çok değilse çalışır */}
                 {
                     pageNumbers.map(number => (
                         <div key={number}>
